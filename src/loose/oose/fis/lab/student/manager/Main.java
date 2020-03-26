@@ -8,10 +8,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-<<<<<<< feature/SM-1
 
-=======
->>>>>>> master
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("fxml/login.fxml"));
@@ -21,11 +18,6 @@ public class Main extends Application {
     }
 
 
-<<<<<<< feature/SM-1
-=======
-
-
->>>>>>> master
     public static void main(String[] args) {
         launch(args);
     }
