@@ -6,21 +6,21 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import loose.oose.fis.lab.student.manager.model.Students;
+import loose.oose.fis.lab.student.manager.model.Student;
 
 public class ViewStudentsController {
 
     @FXML
-    public TableView<Students> studentTable;
+    public TableView<Student> studentTable;
 
     @FXML
-    public TableColumn<Students, String> studentLastNameColumn;
+    public TableColumn<Student, String> studentLastNameColumn;
     @FXML
-    public TableColumn<Students, String> studentFirstNameColumn;
+    public TableColumn<Student, String> studentFirstNameColumn;
     @FXML
-    public TableColumn<Students, Integer> studentAgeColumn;
+    public TableColumn<Student, Integer> studentAgeColumn;
     @FXML
-    public TableColumn<Students, Double> studentMeanGradeColumn;
+    public TableColumn<Student, Double> studentMeanGradeColumn;
 
     @FXML
     public void initialize() {
@@ -32,12 +32,12 @@ public class ViewStudentsController {
         studentTable.setItems(students);
     }
 
-    private ObservableList<Students> students = FXCollections.observableArrayList(
-            new Students("John", "Doe", 20, 8.73),
-            new Students("Jane", "Does", 23, 9.35),
-            new Students("Jack", "Black", 19, 6.58),
-            new Students("Julia", "Nice", 21, 9.85),
-            new Students("Johnny", "Jackson", 24, 9.97),
-            new Students("Michelle", "Roberts", 22, 7.65)
+    private ObservableList<Student> students = FXCollections.observableArrayList(
+            new Student("John", "Doe", 20, 8.73),
+            new Student("Jane", "Does", 23, 9.35),
+            new Student("Jack", "Black", 19, 6.58),
+            new Student("Julia", "Nice", 21, 9.85),
+            new Student("Johnny", "Jackson", 24, 9.97),
+            new Student("Michelle", "Roberts", 22, 7.65)
     );
 }
